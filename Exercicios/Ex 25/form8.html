@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outputs</title>
+</head>
+<body>
+    <h1>Outputs</h1>
+    <form autocomplete="on" method="get">
+        <p>
+            <label for="in1">Numero 1</label>
+            <input type="number" name="n1" id="in1" required min="0" max="100" oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+
+        <p>
+            <label for="in22">Numero 2</label>
+            <input type="number" name="n2" id="in2" required min="0" max="100" oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+        
+        <p>
+            <label for="isoma">Soma = </label>
+            <output name="soma" id="isoma">0</output>
+        </p>
+
+        <p>
+            <label for="inum">Numero </label>
+            <input type="range" name="num" id="inum" min="0" max="10" value="0" oninput="ival.innerHTML = Number(inum.value)">
+            <output id="ival">0</output>
+        </p>
+
+        <p>
+            <label for="iano">Digite o ano que você nasceu</label>
+            <input type="number" name="ano" id="iano" min="1900" max="2025" oninput="calcIdade()">
+        </p>
+
+        <p>
+            <label for="idade">Idade = </label>
+            <output id="idade">0</output>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+    <script>
+        function calcIdade(){
+            let atual = new Date().getFullYear()
+            idade.innerHTML = Number(atual) - Number(iano.value)
+        }
+    </script>
+</body>
+</html>
