@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+/* Media Impressora */
+
+*{
+    margin: 5px;
+    padding: 5px;
+}
+
+html{
+    font-family: monospace;
+    font-size: 1.1em;
+    line-height: 1.4em;
+}
+
+menu{
+    display: none;
+}
+
+main{
+    width: 100%;
+}
+
+article::after{
+    content: 'Esse artigo foi impresso atraves do site www.cursoemvideo.com.br';
+}
