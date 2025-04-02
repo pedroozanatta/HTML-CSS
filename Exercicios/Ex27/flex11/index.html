@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flex-Box</title>
     <style>
-
+        
        .conteiner{
         background-color: lightsalmon;
         display: flex;
@@ -16,31 +16,24 @@
         background-color: lightskyblue;
         border: 1px solid black;
         text-align: center;
-        
+        flex-basis: 250px;
+        flex-shrink: 1;
+        flex-grow:0 ;
        }
 
        #cxA{
-        /*flex-shrink: 0;
+        flex-shrink: 0;
         flex-grow: 1;
-        flex-basis: 250px;*/
-
-        flex: 1 0 250px;
        }
 
        #cxB{
-        /*flex-shrink: 1;
+        flex-shrink: 1;
         flex-grow: 1;
-        flex-basis: 150px;*/
-
-        flex: 1 1 150px;
        }
 
        #cxC{
-        /*flex-shrink: 6;
+        flex-shrink: 6;
         flex-grow: 1;
-        flex-basis: auto;*/
-
-        flex: 1 6 auto;
        }
 
     </style>
